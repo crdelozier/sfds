@@ -25,13 +25,10 @@ void check(){
   
   if(y == 790){
     ydir = -1;
-    
-    
   }
   
   if(x == 10){
     xdir = 1;
-    
   }
   
   if(y == 10){
