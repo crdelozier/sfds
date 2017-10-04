@@ -2,8 +2,8 @@ void setup(){
   size(800,800);
 }
 
-int x = 50;
-int y = 0;
+int x = 400;
+int y = 400;
 
 int xdir = 1;
 int ydir = 1;
