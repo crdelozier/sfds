@@ -1,9 +1,9 @@
 void setup(){
-  size(640,640);
+  size(800,800);
 }
 
-int x = 300;
-int y = 300;
+int x = 400;
+int y = 400;
 
 int xdir = 1;
 int ydir = 1;
@@ -20,11 +20,11 @@ void draw(){
 }
 
 void checkCollisions(){
-  if(x == 630){
+  if(x == 790){
     xdir = -1;
   }
   
-  if(y == 630){
+  if(y == 790){
     ydir = -1;
   }
   
