@@ -193,3 +193,7 @@ not exit the screen).
 
 * Add a cheat code enabled by pressing some keyboard buttons (use keyPressed())
  that gives the player a big advantage.
+ 
+* Program some artificial intelligence for player 2!  You should try to make the second player's moves 
+  as fair as possible.  The computer opponent should have some limitations on how it can move so that 
+  it isn't perfect.  Don't just make it so that the artificial intelligence always wins.
