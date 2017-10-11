@@ -14,7 +14,7 @@ make the change in and some hints on how to change the code.
 However, I won't give a whole new code file, so you'll have to 
 figure out how to modify the existing code.
 
-Bigger Paddle
+Bigger (or Smaller) Paddle
 --------------
 
 * The first thing we need to change to make a bigger paddle
