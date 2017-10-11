@@ -130,10 +130,10 @@ keyPressed() function to get input from the keyboard.
 
 ```
 void keyPressed(){
-  if(keyCode == 'w'){
+  if(key == 'w'){
     p -= 10;
   }
-  if(keyCode == 's'){
+  if(key == 's'){
     p += 10;
   }
 }
