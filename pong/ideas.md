@@ -14,6 +14,16 @@ make the change in and some hints on how to change the code.
 However, I won't give a whole new code file, so you'll have to 
 figure out how to modify the existing code.
 
+Example: Changing Colors
+-------------------------
+
+* We can change the colors by changing the arguments to the background() and fill() function calls.
+
+```
+background(200,200,0);
+fill(0,0,150);
+```
+
 Bigger (or Smaller) Paddle
 --------------
 
