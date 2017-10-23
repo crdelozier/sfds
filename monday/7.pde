@@ -2,7 +2,7 @@ void setup(){
   size(800,800); 
 }
 
-int x = 300;
+int x = 400;
 int y = 400;
 int xdir = 1;
 int ydir = 1;
@@ -14,24 +14,23 @@ void draw(){
   ellipse(x,y,20,20);
   x = x + speed * xdir;
   y = y + speed * ydir;
-  
+  check();
+}
+
+void check(){
   if(x > 790){
     xdir = -1;
-    speed++;
   }
   
   if(y > 790){
     ydir = -1;
-    speed++;
   }
   
   if(x < 10){
     xdir = 1;
-    speed++;
   }
   
   if(y < 10){
     ydir = 1;
-    speed++;
   }
 }
