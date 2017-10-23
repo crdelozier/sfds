@@ -192,6 +192,30 @@ Should players get a point each time they hit the ball?  Should players only
 get points when they get the ball past their opponent's paddle?  Choose how
 to score the game and update any code that deals with the score!
 
+Changing the Ball to an Image
+-----------------------------
+
+* First, find an image to use instead of the ball!
+* Here's an example if you don't have one you want to use: https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png
+
+* We need to add a variable for the image:
+
+```
+PImage img;
+```
+
+* Next, we need to load the image:
+
+```
+img = loadImage("path/to/image.png");
+```
+
+* Finally, we replace the ellipse() with our image:
+
+```
+image(img,x,y);
+```
+
 Bonus Ideas (No Hints)
 -----------------------
 
