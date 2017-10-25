@@ -197,6 +197,8 @@ Changing the Ball to an Image
 
 * First, find an image to use instead of the ball!
 * Here's an example if you don't have one you want to use: https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png
+* IMPORTANT: Make sure you save your file to Downloads in the studentlab folder.  (C:/Users/studentlab/Downloads)
+* IMPORTANT: Make sure you save the image as image.jpg or image.png
 
 * We need to add a variable for the image:
 
@@ -204,7 +206,7 @@ Changing the Ball to an Image
 PImage img;
 ```
 
-* Next, we need to load the image:
+* Next, we need to load the image (if your image is a png, change the .jpg to .png):
 
 ```
 img = loadImage("C:\\Users\\studentlab\\Downloads\\image.jpg");
