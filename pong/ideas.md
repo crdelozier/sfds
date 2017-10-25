@@ -207,7 +207,7 @@ PImage img;
 * Next, we need to load the image:
 
 ```
-img = loadImage("path/to/image.png");
+img = loadImage("C:\\Users\\studentlab\\Downloads\\image.jpg");
 ```
 
 * Finally, we replace the ellipse() with our image:
