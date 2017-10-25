@@ -1,59 +1,15 @@
-// This creates the window
 void setup(){
   size(800,800); 
 }
 
-// x and y are the ball's position
 int x = 400;
 int y = 400;
 
-// xdir and ydir are the ball's direction
-int xdir = 1;
-int ydir = 1;
-
-// This is the ball's speed
-int speed = 1;
-
-// This is the game score
-int score = 0;
-
 void draw(){
-  // These calls set the colors
   background(255);
   fill(0);
-  
-  // This draws the ball
   ellipse(x,y,20,20);
-  
-  moveBall();
-  checkCollisions();
-}
-
-// This function moves the ball on the screen
-void moveBall(){
-  x = x + xdir * speed;
-  y = y + ydir * speed;
-}
-
-void checkCollisions(){
-  // If the ball goes out of the screen, the game is over
-  if(x < 10){
-    xdir = 1;
-  }
-  
-  // This makes the ball bounce off of the right side
-  // of the window
-  if(x > 790){
-    xdir = -1;
-  }
-  
-  // This makes the ball bounce off of the top of the window
-  if(y < 10){
-    ydir = 1; 
-  }
-  
-  // This makes the ball bounce off of the bottom of the window
-  if(y > 790){
-    ydir = -1;
-  }
+  ellipse(x2,y2,20,20);
+  x++;
+  y++;
 }
