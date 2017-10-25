@@ -22,11 +22,19 @@ void draw(){
 }
 
 void checkCollisions(){
-  if(x == 790){
+  if(x > 790){
     xdir = -1; 
   }
   
-  if(y == 790){
+  if(y > 790){
     ydir = -1; 
+  }
+  
+  if(x < 10){
+    xdir = 1;
+  }
+  
+  if(y < 10){
+    ydir = 1;
   }
 }
