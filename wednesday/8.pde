@@ -1,14 +1,11 @@
 void setup(){
-  size(800,800); 
-}
-
-int x = 400;
-int y = 400;
-
-void draw(){
+  size(800,800);
   background(255);
   fill(0);
-  ellipse(x,y,20,20);
-  x++;
-  y++;
+  
+  for(int x = 0; x <= 800; x += 20){
+    for(int y = 0; y <= 800; y += 20){
+      ellipse(x,y,20,20);
+    }
+  }
 }
