@@ -55,11 +55,13 @@ void draw(){
     }
   }
   
+  // Add a loop from 0 to 4 that includes the next 2 lines
   fill(colors[0]);
   rect(x[0],y[0],300,300);
 }
 
 void mousePressed(){
+  // Add a loop from 0 to 4 that includes the next 9 lines
   if(mouseX >= x[0] && mouseX <= x[0] + 300){
     if(mouseY >= y[0] && mouseY <= y[0] + 300){
        colors[0] = bright[0];
@@ -69,10 +71,12 @@ void mousePressed(){
        }
     }
   }
+
   redraw();
 }
 
 void mouseReleased(){
+  // Add a loop from 0 to 4 that includes the next 5 lines
   if(mouseX >= x[0] && mouseX <= x[0] + 300){
     if(mouseY >= y[0] && mouseY <= y[0] + 300){
        colors[0] = dull[0];   
@@ -83,6 +87,8 @@ void mouseReleased(){
 
 void checkWin(){
   f = 0;
+  
+  // Add a loop from 0 to e that includes the next 6 lines
   if(pattern[0] != entered[0]){
     println("INCORRECT!");
     e--;
@@ -100,8 +106,10 @@ void checkWin(){
 }
 
 void addPattern(){
-   pattern[0] = (int)random(0,4);
-   e++;
+  // Change the 0 to e
+  pattern[0] = (int)random(0,4);
+  // Add 1 to e
+  
 }
 
 void keyPressed(){
