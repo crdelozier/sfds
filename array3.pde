@@ -106,10 +106,8 @@ void checkWin(){
 }
 
 void addPattern(){
-  // Change the 0 to e
-  pattern[0] = (int)random(0,4);
-  // Add 1 to e
-  
+  pattern[e] = (int)random(0,4);
+  e++;
 }
 
 void keyPressed(){
