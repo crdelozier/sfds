@@ -5,16 +5,25 @@ var data = [];
 function doTrain(){
   var input = 
     document.forms["in"]["train"].value;
-  alert(input);
+  var words = input.split(" ");
+
+  
 }
 </script>
 </head>
 <body>
 <form name="in">
 <textarea name="train" rows="10" cols="30">
-Input some text here to try it out
 </textarea>
-<button type="button" onclick="doTrain()">Train Algorithm</button>
+<button type="button" onclick="doTrain()">Press</button>
+</form>
+<form name="out">
+<p>Enter: <input type="text" 
+                  name="entry" 
+                  oninput="doAuto()"></p>
+<p>Output: <input type="text" 
+                  name="answer" 
+                  readonly></p>
 </form>
 </body>
 </html>
