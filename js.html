@@ -3,61 +3,9 @@
 <script>
 var data = [];
 function doTrain(){
-  var input = document.forms["in"]["train"].value;
-  var words = input.split(" ");
-
-  for(i = 1; i < words.length-1; i++){
-    found = false;
-    for(j = 0; j < data.length; j++){
-       if(data[j].first === words[i-1] && data[j].second === words[i]){
-          data[j].count = data[j].count + 1;
-          found = true;
-          break;
-       }
-    }
-
-    if(!found){
-      var pair = {
-        first: words[i-1], second: words[i], count: 1
-      };
-      data.push(pair);
-    }
-  }
-}
-
-function doAuto(){
-  var input = document.forms["out"]["entry"].value;
-  maxCount = 0
-  for(i = 0; i < data.length; i++){
-    if(data[i].first === input && data[i].count > maxCount){
-      document.forms["out"]["answer"].value = data[i].second;
-      maxCount = data[i].count;
-    }
-  }
-}
-
-function findNext(input){
-  var found = "";
-  maxCount = 0;
-  for(i = 0; i < data.length; i++){
-    if(data[i].first == input && data[i].count > maxCount){
-      found = data[i].second;
-    } 
-  }
-  return found;
-}
-
-function doSentence(){
-  var rnd = Math.floor(Math.random() * data.length);
-  var last = data[rnd].first;
-  var sentence = last;
-  var max = 40;
-  while(!(last === "" || max == 0)){
-    last = findNext(last);
-    sentence = sentence + " " + last;
-    max--;
-  }
-  document.forms["sentence"]["test"].value = sentence;
+  var input = 
+    document.forms["in"]["train"].value;
+  alert(input);
 }
 </script>
 </head>
@@ -67,14 +15,6 @@ function doSentence(){
 Input some text here to try it out
 </textarea>
 <button type="button" onclick="doTrain()">Train Algorithm</button>
-</form>
-<form name="out">
-<p>Enter a word here: <input type="text" name="entry" oninput="doAuto()"></p>
-<p>Autocomplete here: <input type="text" name="answer" readonly></p>
-</form>
-<form name="sentence">
-<textarea name="test" rows="10" cols="30"></textarea>
-<button type="button" onclick="doSentence()">Generate a Sentence</button>
 </form>
 </body>
 </html>
